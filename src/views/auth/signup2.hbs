@@ -1,0 +1,104 @@
+<form class="row g-3" action="/signup2" method="POST" style="margin-top: 3%;">
+ 
+  <div class="col-md-6">
+    <label for="inputNombres" class="form-label">Nombres</label>
+    <input
+      type="text"
+      class="form-control"
+      name="nombres"
+      id="nombres"
+      minlength="5"
+      maxlength="45"
+      required
+      autofocus=""
+      placeholder="Juan"
+    />
+  </div>
+
+  <div class="col-md-4">
+    <label for="inputRut" class="form-label">Rut</label>
+    <input
+      type="text"
+      class="form-control"
+      name="rut"
+      id="rut"
+      minlength="5"
+      maxlength="10"
+      required
+      pattern="[0-9]*"
+      placeholder="12.345.678"
+    />
+  </div>
+
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Contraseña</label>
+    <input
+      type="password"
+      class="form-control"
+      name="pass"
+      id="pass"
+      minlength="8"
+      maxlength="20"
+      required
+      placeholder="***********"
+    />
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Confirmar Contraseña</label>
+    <input
+      type="password"
+      class="form-control"
+      name="pass2"
+      id="pass2"
+      minlength="5"
+      maxlength="20"
+      required
+      placeholder="***********"
+    />
+  </div>
+
+
+
+
+  <div class="col-md-12" style="margin-bottom: 4%;">
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Añadir Usuario
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          ¿Desea guardar los datos?
+        </div>
+        <div class="modal-footer">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            data-bs-dismiss="modal"
+          >Si</button>
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-bs-dismiss="modal"
+          >No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</form>
